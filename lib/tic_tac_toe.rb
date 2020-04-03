@@ -11,12 +11,6 @@ class TicTacToe
       [2, 4, 6]
     ]
   
-    def won?
-      
-    end 
-    
-    
-    
   
   def initialize(board = nil)
     # if board is nil than is false and the new array gets created
@@ -87,6 +81,11 @@ class TicTacToe
       turn
     end
     
+  def won?
+    WIN_COMBINATIONS.find { |position|
+      @board[position[0]] == @board[position[1]] && @board[position[1]] == @board[position[2]] && @board[position[2]] != " "
+    }
+  end
 
   
   end 
