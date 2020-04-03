@@ -89,6 +89,17 @@ class TicTacToe
     }
   end
 
+  def full?
+    empty_slot = @board.find {|element|  element == "" || element == " "}
+    if empty_slot
+      false
+    else 
+      true 
+  end 
+  
+  
+  
+  
   
 end 
  
