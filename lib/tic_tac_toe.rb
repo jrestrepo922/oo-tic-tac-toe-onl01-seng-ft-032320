@@ -110,6 +110,7 @@ class TicTacToe
     if full? && won? != nil
       true
     end 
+  end
   
 end 
  
