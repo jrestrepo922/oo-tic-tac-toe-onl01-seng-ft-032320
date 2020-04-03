@@ -14,6 +14,9 @@ class TicTacToe
     def won?
       
     end 
+    
+    
+    
   
   def initialize(board = nil)
     # if board is nil than is false and the new array gets created
