@@ -82,6 +82,7 @@ class TicTacToe
     end
     
   def won?
+    #find stops iterating when the value is true and returns the true value back
     WIN_COMBINATIONS.find { |position|
       @board[position[0]] == @board[position[1]] && @board[position[1]] == @board[position[2]] && @board[position[2]] != " "
     }
