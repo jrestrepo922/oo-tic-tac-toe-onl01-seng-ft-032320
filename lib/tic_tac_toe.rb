@@ -80,6 +80,7 @@ class TicTacToe
     else
       turn
     end
+  end
     
   def won?
     #find stops iterating when the value is true and returns the true value back
@@ -89,8 +90,8 @@ class TicTacToe
   end
 
   
- end 
 end 
+ 
 
 
 
